@@ -1,8 +1,11 @@
+const { Router } = require('express');
 const express = require('express');
 
-const app = express()
+const router = Router()
+
+const notes = require('./notes')
+
+router.use('/notes', notes)
 
 
-
-
-module.exports = app
+module.exports = router
