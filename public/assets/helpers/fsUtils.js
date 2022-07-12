@@ -36,12 +36,15 @@ const readAndDelete = (content, file) => {
   fs.readFile(file, 'utf8', (err, data) => {
     if (err){
       console.error(err);
-
+      res.send('Error deleting note')
     } else {
       const parsedData = JSON.parse(data);
-      console.log('hello???')
-      console.log(parsedData);
-      console.log(index)
+      const newData = parsedData.filter((todo) => todo.id !== content)
+      fs.writeFile( file, JSON.stringify(newData), 'utf-8', (error) => { 
+        if(err) {
+          console.log(error) }
+        } 
+      )
     }
   } )
 }

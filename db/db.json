@@ -1,12 +1,17 @@
 [
     {
-        "title": "lfkjsda",
-        "text": "lkjjkl\n",
-        "id": "f6dac13e-a81a-4023-b954-f38145ad9fb5"
+        "title": "Walk the dog",
+        "text": "Make sure to do it early in the morning or in the evening so the asphalt isn't too hot!",
+        "id": "30b5b770-2aba-48ac-8977-a70452a02dc8"
     },
     {
-        "title": "dsafd",
-        "text": "sadfsda",
-        "id": "e82a79ae-6048-44c9-b13b-4a599d49e78f"
+        "title": "Turn in homework",
+        "text": "Make sure to complete the extra credit part!",
+        "id": "2147c4de-cc8a-49d2-b17d-3e2c414f035e"
+    },
+    {
+        "title": "Clean the kitchen",
+        "text": "Scrub the counters and empty the dishwasher",
+        "id": "da95c217-3d42-44ad-9357-fabfed429d82"
     }
 ]
