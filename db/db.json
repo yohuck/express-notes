@@ -12,6 +12,11 @@
     {
         "title": "Clean the kitchen",
         "text": "Scrub the counters and empty the dishwasher",
-        "id": "da95c217-3d42-44ad-9357-fabfed429d82"
+        "id": "433e7dde-3f49-4c11-9381-a887b001481f"
+    },
+    {
+        "title": "Another one",
+        "text": "Here's another note!",
+        "id": "1b40c14d-f4e8-402f-8907-0012f882de8e"
     }
 ]

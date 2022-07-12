@@ -8,7 +8,7 @@ router = Router()
 
 
 router.get('/', (req, res) => {
-    readFromFile('../../../db/db.json').then((data) => res.json(JSON.parse(data)))
+    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 })
 
 router.post('/', (req, res) => {
@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
             id: randomUUID()
         }
 
-    readAndAppend(newNote, '../../../db/db.json');
+    readAndAppend(newNote, './db/db.json');
 
     res.json('Note added!')
 } else {
@@ -33,7 +33,7 @@ router.post('/', (req, res) => {
 router.delete('/:id', (req, res) => {
     const { id } = req.params;
     console.log(id);
-    readAndDelete(id, '../../../db/db.json')
+    readAndDelete(id, './db/db.json')
     res.json('deleted!')
 })
 
