@@ -1,4 +1,5 @@
 const { randomUUID } = require('crypto');
+const { uuid } = require('../helpers/uuid')
 const { Router} = require('express')
 const fs = require('fs')
 const util = require('util');
@@ -18,7 +19,7 @@ router.post('/', (req, res) => {
         const newNote = {
             title: req.body.title,
             text: req.body.text,
-            id: randomUUID()
+            id: uuid(),
         }
 
     readAndAppend(newNote, './db/db.json');
